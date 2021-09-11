@@ -6,6 +6,7 @@ const Header: React.FC = () => {
             <Container>
                 <div>
                     Devel
+                    <span></span>
                 </div>
                 <ul>
                     <li>Meus Talentos </li>
