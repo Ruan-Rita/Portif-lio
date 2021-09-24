@@ -9,8 +9,8 @@ const Header: React.FC = () => {
                     <span></span>
                 </div>
                 <ul>
-                    <li>Meus Talentos </li>
-                    <li>Sobre</li>
+                    <li><a href="/meus-talentos"> Meus Talentos</a> </li>
+                    <li><a href="/sobre">Sobre</a></li>
                 </ul>
             </Container>
         </Headers>

@@ -51,6 +51,9 @@ export const Container = styled.div`
             font-size: 1.2rem;
             /* background-color: red; */
             user-select: none;
+            a{
+                text-decoration: none;
+            }
             
         }
     }

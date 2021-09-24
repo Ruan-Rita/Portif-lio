@@ -7,7 +7,8 @@ const Apresentation : React.FC = () => {
             <Content>
                 <Description>
                     <h2>Ruan Rita</h2>
-                    <p>Eu sou Progrador FullStack, tenho me curtido essa vida louca</p>
+                    <p>Eu sou Programador FullStack apaixonado por tecnologia, sempre buscando novos desafios !</p>
+                    <p className="bold">Sou feliz Desenvolvendo seu Site</p>
                     <button>Saiba mais</button>
                 </Description>
                 <img src={process.env.PUBLIC_URL + "/assets/images/ruan.png"} alt="Ruan" />

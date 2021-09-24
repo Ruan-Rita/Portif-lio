@@ -10,6 +10,7 @@ export const Content = styled.section`
     max-width: 1000px;
     margin: 0px auto;
     display: flex;
+    flex-wrap: wrap;
     padding: 80px 0px;
     min-height: 500px;
     justify-content: space-between;
@@ -21,18 +22,33 @@ export const Content = styled.section`
         height: 370px;
         object-fit: cover;
     }
+    @media (max-width: 850px)
+    {
+        justify-content: center;
+        img{
+            margin-top: 100px;
+        }
+    }
 `
 
 export const Description = styled.div`
-    margin-right: 200px;
+    max-width: 400px;
 
     h2 {
         font-size: 3rem;
+        color: #222;
     }
     p {
+        color: #222;
         margin-top: 10px;
         font-size: 1.7rem;
+
+        &.bold{
+            color: #784CFB;
+            font-weight: 800;
+        }
     }
+    
     button{
         width: 200px;
         height: 60px;
@@ -41,5 +57,11 @@ export const Description = styled.div`
         color: white;
         border-radius: 10px;
         margin-top: 30px;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+            filter: brightness(.92);
+        }
     }
 `

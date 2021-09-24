@@ -18,9 +18,7 @@ export const Content = styled.section`
 `
 
 export const Title = styled.div`
-    p{
-
-    }
+    
     h2{
         color: white;
         font-size: 2rem;
@@ -31,7 +29,27 @@ export const Spec = styled.div`
     padding: 40px 0px;
     margin-top: 30px;
     justify-content: center;
+    
+    
+    @media (max-width: 1100px)
+    {
+        flex-wrap: wrap;
+        div {
+            margin: 30px 0px;
+            margin-left: 40px;
+            &.white{
+                transform: scale(1.0);
 
+            }
+        }
+    }
+    @media (max-width: 800px)
+    {
+        img{
+            width: 180px;
+            height: 180px;
+        }
+    }
     div{
         background-color: rgba(27, 69, 17, 0.5);
         padding: 30px;
@@ -55,9 +73,14 @@ export const Spec = styled.div`
         }
         p {
             font-size: 1.1rem;
+            text-align: center;
 
             color: white;
             margin-top: 12px;
+        }
+        &:hover{
+            filter: brightness(.8);
+            cursor: pointer;
         }
     }
     div.white{

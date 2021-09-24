@@ -13,10 +13,11 @@ const Specilizing : React.FC = () => {
                 </Title>
                 <Spec>
                     {getSpecilization().map((iten, index) => (
-                        <div className={index == 1 ? "white": "" }>
+                        <div key={index} className={index == 1 ? "white": "" }>
                             <img src={process.env.PUBLIC_URL+"/assets/images/"+iten.src} alt=""/>
                             <h1>{iten.title}</h1>
                             <p>{iten.description}</p>
+                            
                         </div>
                     ))}
                 </Spec>
