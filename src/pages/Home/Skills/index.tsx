@@ -4,14 +4,14 @@ import { Circle, Container, Content, SkillsFather, Title } from "./styles";
 const Skills : React.FC = () => {
     return (
         <Container>
-            <Content>
+            <Content id="skills">
                 <Title>
                     <h2>
                         Minhas Habilidades
                     </h2>
                     <p></p>
                 </Title>
-                <SkillsFather>
+                <SkillsFather >
                     {getSkills().map(iten => (
                         <div>
                             <div className="card">

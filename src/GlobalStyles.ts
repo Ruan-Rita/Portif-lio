@@ -21,6 +21,13 @@ const GlobalStyles = createGlobalStyle`
         src: url('${process.env.PUBLIC_URL}/assets/fonts/Nunito/Nunito-Regular.ttf');
     }
 
+    .d-flex{
+        display: flex !important;
+    }
+    .flex-column{
+        flex-direction: column !important;
+    }
+
 
 `
 export default GlobalStyles;

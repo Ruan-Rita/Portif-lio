@@ -18,12 +18,34 @@ export const Content= styled.div`
             justify-content: start;
             display: flex;
             align-items: center;
-            /* background-color: red; */
             margin-bottom: 15px;
-
+            transition: all .3s;
+    
+            &:hover{
+                transform: scale(1.1);
+                .spin{
+                    animation-duration: 3500ms;
+                }
+            }
+            .spin{
+                transition: all .3s;
+                
+                animation-name: spin;
+                animation-duration: 5000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes spin {
+                from {
+                    transform:rotate(0deg);
+                }
+                to {
+                    transform:rotate(360deg);
+                }
+            }
             svg{
                 margin-right: 10px;
-                color: #cfd9ff;
+                color: #85ffff;
                 font-size: 2rem;
             }
             a{
@@ -40,7 +62,7 @@ export const Content= styled.div`
                 margin-right: 10px;
             }
             h2{
-                color: #cfd9ff;
+                color: #85ffff;
                 font-size: 1.2rem;
             }
         }
@@ -49,18 +71,28 @@ export const Content= styled.div`
             text-align: start;
             margin-bottom: 25px;
             
-            img{
-                margin-right: 10px;
-                max-width: 40px;
-                max-height: 40px;
-                object-fit: contain;
-                margin-right: 10px;
+            a {
+                margin-top: 5px;
+                margin-right: 5px;
+                color: #cfd9ff;
                 svg{
-                    fill: red;
+                    margin-right: 10px;
+                    font-size:3rem;
+                    transition: all .3s;
 
+                    &:hover{
+                        filter: opacity(.7);
+                        transform: scale(1.1) translate(12%,0%);
+                    }
                 }
-                path{
-                    fill: red;
+                &:nth-child(1) svg{
+                    color: #4bed68;
+                }
+                &:nth-child(2) svg{
+                    color: #dddddd;
+                }
+                &:nth-child(3) svg{
+                    color: #24292f;
                 }
             }
         }

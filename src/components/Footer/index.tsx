@@ -13,7 +13,7 @@ const Footer : React.FC = () => {
                 <Columns>
                     <div className="itens">
                         <div className="headerFooter">
-                            <FontAwesomeIcon icon={faAtom} />
+                            <FontAwesomeIcon className="spin" icon={faAtom} />
                             <h2>Sobre</h2>
                         </div>
                         <div className="contentFooter">
@@ -28,11 +28,11 @@ const Footer : React.FC = () => {
                             <FontAwesomeIcon icon={faNewspaper} />
                             <h2>Novos Notícias</h2>
                         </div>
-                        <div className="contentFooter">
-                            <p>FullStack</p>
-                            <p>Mobile</p>
-                            <p>Devops</p>
-                            <p>Hospedagem</p>
+                        <div className="contentFooter d-flex flex-column">
+                            <a href="#" target="_blank">FullStack</a>
+                            <a href="#" target="_blank">Mobile</a>
+                            <a href="#" target="_blank">Devops</a>
+                            <a href="#" target="_blank">Hospedagem</a>
                         </div>
                     </div>
                     <div className="itens">
@@ -40,10 +40,10 @@ const Footer : React.FC = () => {
                             <FontAwesomeIcon icon={faShippingFast} />
                             <h2>Serviços</h2>
                         </div>
-                        <div className="contentFooter">
-                            <p>WebSite</p>
-                            <p>Aplicativos</p>
-                            <p>Designer</p>
+                        <div className="contentFooter d-flex flex-column">
+                            <a href="#" target="_blank">WebSite</a>
+                            <a href="#" target="_blank">Aplicativos</a>
+                            <a href="#" target="_blank">Designer</a>
                         </div>
                     </div>
                     <div className="itens">
@@ -52,16 +52,14 @@ const Footer : React.FC = () => {
                             <h2>Redes Sociais</h2>
                         </div>
                         <div className="contentFooter">
-                            <a href="https://api.whatsapp.com/send?phone=5512988437057">
-                                <img src={process.env.PUBLIC_URL + "/assets/icons/whatsapp-brands.svg"} alt="" />
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5512988437057">
+                                <svg data-src={`${process.env.PUBLIC_URL}/assets/icons/whatsapp-brands.svg`} ></svg>
                             </a>
-                            <a href="https://www.linkedin.com/in/ruan-rita-99885a1b6/">
-                                <object type="image/svg+xml" data={`${process.env.PUBLIC_URL} + /assets/icons/linkedin-brands.svg`} ></object>
-
+                            <a target="_blank" href="https://www.linkedin.com/in/ruan-rita-99885a1b6/">
+                                <svg data-src={`${process.env.PUBLIC_URL}/assets/icons/linkedin-brands.svg`}></svg>
                             </a>
-                            <a href="https://github.com/Ruan-Rita">
-                            <object type="image/svg+xml" data={`${process.env.PUBLIC_URL} + /assets/icons/linkedin-brands.svg`} ></object>
-
+                            <a target="_blank" href="https://github.com/Ruan-Rita">
+                                <svg data-src={`${process.env.PUBLIC_URL}/assets/icons/github-brands.svg`} ></svg>
                             </a>
                         </div>
                         

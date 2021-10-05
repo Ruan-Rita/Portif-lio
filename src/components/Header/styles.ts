@@ -54,6 +54,12 @@ export const Container = styled.div`
             a{
                 text-decoration: none;
                 color: #5656cd;
+                transition: all .2s ease-in;
+                &:hover{
+                    transform: scale(1.1);
+                    span{
+                    }
+                }
             }
             
         }

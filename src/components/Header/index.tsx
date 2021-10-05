@@ -9,7 +9,7 @@ const Header: React.FC = () => {
                     <span></span>
                 </div>
                 <ul>
-                    <li><a href="/meus-talentos"> Meus Talentos</a> </li>
+                    <li><a href="/meus-talentos#skills">Habilidades</a> </li>
                     <li><a href="/sobre">Sobre</a></li>
                 </ul>
             </Container>
