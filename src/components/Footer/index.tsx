@@ -13,7 +13,10 @@ const Footer : React.FC = () => {
                             <h2>Sobre</h2>
                         </div>
                         <div className="contentFooter">
-                            <p></p>
+                            <p>Ruan Rita</p>
+                            <p>20 anos</p>
+                            <p>FullStack</p>
+                            <p>Programmer</p>
                         </div>
                     </div>
                     <div className="itens">
@@ -21,18 +24,43 @@ const Footer : React.FC = () => {
                             <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
                             <h2>Novos Notícias</h2>
                         </div>
-                    </div>
-                    <div className="itens">
-                        <div className="headerFooter">
-                            <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
-                            <h2>Informação</h2>
+                        <div className="contentFooter">
+                            <p>FullStack</p>
+                            <p>Mobile</p>
+                            <p>Devops</p>
+                            <p>Hospedagem</p>
                         </div>
                     </div>
                     <div className="itens">
                         <div className="headerFooter">
                             <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
-                            <h2>WhatsApp</h2>
+                            <h2>Serviços</h2>
                         </div>
+                        <div className="contentFooter">
+                            <p>WebSite</p>
+                            <p>Aplicativos</p>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div className="itens">
+                        <div className="headerFooter">
+                            <a href="https://www.linkedin.com/in/ruan-rita-99885a1b6/">
+                                <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
+                                <h2>WhatsApp</h2>
+                                
+                            </a>
+
+                        </div>
+                        <div className="contentFooter">
+                            <p>+55 (12) 98843-7057</p>
+                        </div>
+                        <div className="headerFooter">
+                            <a href="https://www.linkedin.com/in/ruan-rita-99885a1b6/">
+                                <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
+                                <h2>Linkedin</h2>
+                            </a>
+                        </div>
+                        
                     </div>
                 </Columns>
                 <CopyRight>

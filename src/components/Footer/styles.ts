@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-    background: #271663 ;
+    background: #5656cd ;
     /* position: absolute;
     bottom: 0px; */
     width: 100%;
@@ -15,7 +15,12 @@ export const Content= styled.div`
 
     .itens{
         .headerFooter{
+            justify-content: center;
             display: flex;
+            a{
+                justify-content: center;
+                display: flex;
+            }
             /* align-items: center; */
             img{
                 max-width: 35px;
@@ -24,13 +29,16 @@ export const Content= styled.div`
                 margin-right: 10px;
             }
             h2{
-                color: white;
+                color: #cfd9ff;
                 font-size: 1.2rem;
-                margin-bottom: 40px;
+                margin-bottom: 15px;
             }
         }
         .contentFooter{
-            color: white;
+            color: #cfd9ff;
+            text-align: center;
+            margin-bottom: 25px;
+
         }
     }
 `
@@ -47,12 +55,12 @@ export const Columns = styled.div`
 export const CopyRight= styled.div`
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid purple;
+    border-top: 2px solid rgb(146 146 255);
     margin-top: 30px;
     padding-top: 20px;
 
     p {
-        color: white;
+        color: #cfd9ff;
     }
 `
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Headers = styled.header`
     height: 80px ;
     background: #ECEDFA;
-    border-bottom: 1px solid #c5a6fd;
+    border-bottom: 1px solid #5656cd;
 `
 export const Container = styled.div`
     max-width: 1000px;
@@ -17,14 +17,14 @@ export const Container = styled.div`
         flex-direction: column;
         span{
             width: 25px;
-            background-color: #784CFB;
+            background-color: #5656cd;
             height: 3px;
             margin: -5px 0px 0px 2px;
             border-radius: 2px;
             transition: all .2s ease-in;
 
         }
-        color: #784CFB;
+        color: #5656cd;
         font-size: 2rem ;
         user-select: none;
         /* text-shadow: 1px 1px 2px #784C7B; */
@@ -47,12 +47,13 @@ export const Container = styled.div`
             display: flex;
             align-items: center;
             margin: 0px 10px;
-            color: #1E1E1E;
+            color: #5656cd;
             font-size: 1.2rem;
             /* background-color: red; */
             user-select: none;
             a{
                 text-decoration: none;
+                color: #5656cd;
             }
             
         }

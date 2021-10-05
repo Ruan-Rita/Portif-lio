@@ -44,7 +44,7 @@ export const Description = styled.div`
         font-size: 1.7rem;
 
         &.bold{
-            color: #784CFB;
+            color: #5656cd;
             font-weight: 800;
         }
     }

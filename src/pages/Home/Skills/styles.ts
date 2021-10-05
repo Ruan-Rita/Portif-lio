@@ -22,8 +22,8 @@ export const Title = styled.div`
 
     }
     h2{
-        color: #222;
-        font-size: 2rem;
+        color: #5656cd;
+        font-size: 2.3rem;
     }
 `
 export const SkillsFather = styled.div`
@@ -31,110 +31,95 @@ export const SkillsFather = styled.div`
     width: 100%;
     flex-wrap: wrap;
     padding: 40px 0px;
-    margin-top: 30px;
+    margin-top: 20px;
     justify-content: center;
 
     >div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 200px;
-        margin: 10px 20px;
-        padding: 30px;
-        
-        &:hover{
-            cursor: pointer;
-            background-color: #9ecbe8;
-            border-radius: 30px;
-        }
-        p {
-            text-align: center;
-        }
-        h1{
-            color: #222;
-            margin-top: 8px;
-            font-size: 1.4rem;
-        }
-        span{
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px dotted purple;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            color: #222;
+        > div.card{
+            width: 170px;
+            margin: 20px;
+            div.box{
+                div.percent{
+                    position: relative;
+                    width: 100%;
 
-            /* font-weight: bold; */
+                    height: 170px;
+                    
+                    border-radius: 50%;
+                    z-index: 1000;
+
+                    svg{
+                        position: relative;
+                        width: inherit;
+                        height: inherit;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 999;
+                        .circle{
+                            
+                            &:nth-child(2){
+                                box-shadow:inset 0 0 50px #000;
+
+                                stroke: #5656cd;
+                                stroke-dasharray: 440;
+                                stroke-dashoffset: calc(440 - (440 * 80) / 100) ;
+                            }
+
+                        }
+                        
+                    }
+                    div.number{
+                        width: inherit;
+                        height: inherit;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        h2{
+                            color: #5656cd;
+                            text-align: center;
+                            font-size: 40px;
+                            span{
+                                font-size: 20px;
+
+                            }
+                        }
+                    }
+                }
+                > h2{
+                    text-align: center;
+                    position: relative;
+                    color: #777;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                }
+                p{
+                    text-align: center;
+                }
+            }
         }
-        /* .circular{
-        height:100px;
-        width: 100px;
-        position: relative;
-        transform:scale(2);
-        }
-        .circular .inner{
-        position: absolute;
-        z-index: 6;
-        top: 50%;
-        left: 50%;
-        height: 80px;
-        width: 80px;
-        margin: -40px 0 0 -40px;
-        background: #dde6f0;
-        border-radius: 100%;
-        
-        } */
-        /* .circular .number{
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        z-index:10;
-        font-size:18px;
-        font-weight:500;
-        color:#4158d0;
-        }
-        .circular .bar{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: #fff;
-        -webkit-border-radius: 100%;
-        clip: rect(0px, 100px, 100px, 50px);
-        }
-        .circle .bar .progress{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        -webkit-border-radius: 100%;
-        clip: rect(0px, 50px, 100px, 0px);
-        background: #4158d0;
-        }
-        .circle .left .progress{
-        z-index:1;
-        animation: left 4s linear both;
-        }
-        @keyframes left{
-        100%{
-            transform: rotate(180deg);
-        }
-        }
-        .circle .right {
-        transform: rotate(180deg);
-        z-index:3;
-        
-        }
-        .circle .right .progress{
-        animation: right 4s linear both;
-        animation-delay:4s;
-        }
-        @keyframes right{
-        100%{
-            transform: rotate(180deg);
-        }
-        } */
-    }
-    
+    }   
+`
+interface ICircle{
+    progress: string,
+    stroke: string,
+    first: boolean
+}
+export const Circle = styled.circle<ICircle>`
+    width: inherit;
+    height: inherit;
+    fill: none;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(15px, 15px);
+
+    stroke: ${props => props.stroke};
+    ${props => !props.first && `
+        stroke-dasharray: 440;
+        stroke-dashoffset: calc(440 - (440 * ${props.progress}) / 100) ;
+    `}
 `
