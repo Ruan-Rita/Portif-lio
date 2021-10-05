@@ -1,5 +1,9 @@
 import React from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAtom } from '@fortawesome/free-solid-svg-icons'
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
+import { faShippingFast } from '@fortawesome/free-solid-svg-icons'
+import { faNetworkWired } from "@fortawesome/free-solid-svg-icons";
 import {Container, Columns, CopyRight, Content  } from './styles'
 // const 
 const Footer : React.FC = () => {
@@ -9,7 +13,7 @@ const Footer : React.FC = () => {
                 <Columns>
                     <div className="itens">
                         <div className="headerFooter">
-                            <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
+                            <FontAwesomeIcon icon={faAtom} />
                             <h2>Sobre</h2>
                         </div>
                         <div className="contentFooter">
@@ -21,7 +25,7 @@ const Footer : React.FC = () => {
                     </div>
                     <div className="itens">
                         <div className="headerFooter">
-                            <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
+                            <FontAwesomeIcon icon={faNewspaper} />
                             <h2>Novos Notícias</h2>
                         </div>
                         <div className="contentFooter">
@@ -33,7 +37,7 @@ const Footer : React.FC = () => {
                     </div>
                     <div className="itens">
                         <div className="headerFooter">
-                            <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
+                            <FontAwesomeIcon icon={faShippingFast} />
                             <h2>Serviços</h2>
                         </div>
                         <div className="contentFooter">
@@ -44,22 +48,24 @@ const Footer : React.FC = () => {
                     </div>
                     <div className="itens">
                         <div className="headerFooter">
-                            <a href="https://www.linkedin.com/in/ruan-rita-99885a1b6/">
-                                <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
-                                <h2>WhatsApp</h2>
-                                
-                            </a>
-
+                            <FontAwesomeIcon icon={faNetworkWired} />   
+                            <h2>Redes Sociais</h2>
                         </div>
                         <div className="contentFooter">
-                            <p>+55 (12) 98843-7057</p>
-                        </div>
-                        <div className="headerFooter">
+                            <a href="https://api.whatsapp.com/send?phone=5512988437057">
+                                <img src={process.env.PUBLIC_URL + "/assets/icons/whatsapp-brands.svg"} alt="" />
+                            </a>
                             <a href="https://www.linkedin.com/in/ruan-rita-99885a1b6/">
-                                <img src={process.env.PUBLIC_URL + "/assets/icons/about.png"} alt="" />
-                                <h2>Linkedin</h2>
+                                <object type="image/svg+xml" data={`${process.env.PUBLIC_URL} + /assets/icons/linkedin-brands.svg`} ></object>
+
+                            </a>
+                            <a href="https://github.com/Ruan-Rita">
+                            <object type="image/svg+xml" data={`${process.env.PUBLIC_URL} + /assets/icons/linkedin-brands.svg`} ></object>
+
                             </a>
                         </div>
+                        
+                      
                         
                     </div>
                 </Columns>

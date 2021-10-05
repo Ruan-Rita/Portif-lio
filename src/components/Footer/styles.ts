@@ -15,14 +15,25 @@ export const Content= styled.div`
 
     .itens{
         .headerFooter{
-            justify-content: center;
+            justify-content: start;
             display: flex;
+            align-items: center;
+            /* background-color: red; */
+            margin-bottom: 15px;
+
+            svg{
+                margin-right: 10px;
+                color: #cfd9ff;
+                font-size: 2rem;
+            }
             a{
-                justify-content: center;
                 display: flex;
+                justify-content: start;
+                align-items: center;
             }
             /* align-items: center; */
             img{
+                margin-right: 10px;
                 max-width: 35px;
                 max-height: 30px;
                 object-fit: contain;
@@ -31,14 +42,27 @@ export const Content= styled.div`
             h2{
                 color: #cfd9ff;
                 font-size: 1.2rem;
-                margin-bottom: 15px;
             }
         }
         .contentFooter{
             color: #cfd9ff;
-            text-align: center;
+            text-align: start;
             margin-bottom: 25px;
+            
+            img{
+                margin-right: 10px;
+                max-width: 40px;
+                max-height: 40px;
+                object-fit: contain;
+                margin-right: 10px;
+                svg{
+                    fill: red;
 
+                }
+                path{
+                    fill: red;
+                }
+            }
         }
     }
 `
