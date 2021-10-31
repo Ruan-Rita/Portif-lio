@@ -51,21 +51,21 @@ const Skills : React.FC = () => {
 const getSkills = () => {
     return [
         {
-            progress: "30",
+            progress: "40",
             title: 'Node JS',
             description: 'Contrução de api com Javascript',
             colorPrimary: "#90b7f9",
             colorSecondary: "#5656cd"
         },
         {
-            progress: "80",
+            progress: "90",
             title: 'Laravel',
             description: 'Contrução de api com PHP',
             colorPrimary:  "#f7a1a1",
             colorSecondary: "#ff5959"
         },
         {
-            progress: "60",
+            progress: "65",
             title: 'React',
             description: 'Contrução de páginas web com javascript',
             colorPrimary: "#90b7f9",
@@ -79,14 +79,14 @@ const getSkills = () => {
             colorSecondary: "#ff5959"
         },
         {
-            progress: "30",
+            progress: "25",
             title: 'Flutter',
             description: 'Construção de aplicativos nativos',
             colorPrimary: "#90b7f9",
             colorSecondary: "#5656cd"
         },
         {
-            progress: "45",
+            progress: "40",
             title: 'Next JS',
             description: 'Contrução de páginas web com javascript',
             colorPrimary:  "#f7a1a1",
@@ -102,7 +102,7 @@ const getSkills = () => {
         }
         ,
         {
-            progress: "35",
+            progress: "30",
             title: 'Docker',
             description: 'Orquestramento de container',
             colorPrimary:  "#f7a1a1",
@@ -110,7 +110,7 @@ const getSkills = () => {
         }
         ,
         {
-            progress: "50",
+            progress: "35",
             title: 'Designer',
             description: 'Construção de template utilizando figma',
             colorPrimary: "#90b7f9",
@@ -118,7 +118,7 @@ const getSkills = () => {
         }
         ,
         {
-            progress: "15",
+            progress: "10",
             title: 'Vue JS',
             description: 'Contrução de páginas web com javascript',
             colorPrimary:  "#f7a1a1",
