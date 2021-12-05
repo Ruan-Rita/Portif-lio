@@ -9,7 +9,7 @@ export const Container = styled.footer`
     padding: 60px 0px 20px 0px;
 `
 export const Content= styled.div`
-    width: 1000px;
+    max-width: 1000px;
     margin: 0px auto;
     padding: 0px 20px;
 
@@ -106,7 +106,28 @@ export const Columns = styled.div`
     grid-template-columns: repeat(4, minmax(100px, 230px)) ;
     gap: 5px;
 
+    @media (max-width: 950px)
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+        div{
+            margin: 10px;
+        }
 
+    }
+    @media (max-width: 420px)
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* align-items: center; */
+        div{
+            margin: 10px;
+        }
+
+    }
 
 
 `
