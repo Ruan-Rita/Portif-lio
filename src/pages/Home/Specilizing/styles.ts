@@ -31,16 +31,17 @@ export const Spec = styled.div`
     justify-content: center;
     
     
-    @media (max-width: 1100px)
+    @media (max-width: 1000px)
     {
         flex-wrap: wrap;
-        div {
-            margin: 30px 0px;
-            margin-left: 40px;
-            &.white{
-                transform: scale(1.0);
-
-            }
+        padding: 30px 0px;
+        margin-top: 0px;
+        div{
+            margin: 10px 0px;
+        }
+        .white{
+            transform: unset !important;
+            margin: 10px 0px 10px 25px !important;
         }
     }
     @media (max-width: 800px)
@@ -50,6 +51,23 @@ export const Spec = styled.div`
             height: 180px;
         }
     }
+    @media (max-width: 720px)
+    {
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 180px;
+            height: 180px;
+        }
+        .white{
+            margin: 10px 0px !important;
+        }
+    }
+
+
+
+
     div{
         background-color: rgba(27, 69, 17, 0.5);
         padding: 30px;

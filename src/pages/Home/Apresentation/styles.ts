@@ -4,6 +4,9 @@ export const Container = styled.section`
     width: 100%;
     background-image: url('${process.env.PUBLIC_URL}/assets/images/background.png');
     /* background: #ECEDFA; */
+
+
+    
 `
 
 export const Content = styled.section`
@@ -17,16 +20,33 @@ export const Content = styled.section`
     align-items: center;
 
     img {
-        width: 400px;
+        width: 350px;
         border-radius: 50%;
-        height: 370px;
+        height: 360px;
         object-fit: cover;
     }
-    @media (max-width: 850px)
+    @media (max-width: 1000px)
     {
+        justify-content: space-evenly;
+    }
+    @media (max-width: 800px)
+    {   
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         img{
             margin-top: 100px;
+            width: 290px;
+            height: 300px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
         }
     }
 `

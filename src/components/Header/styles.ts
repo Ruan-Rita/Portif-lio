@@ -15,6 +15,7 @@ export const Container = styled.div`
     div{
         display: flex;
         flex-direction: column;
+        margin: 0px 20px;
         span{
             width: 25px;
             background-color: #5656cd;

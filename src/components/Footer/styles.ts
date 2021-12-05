@@ -77,7 +77,9 @@ export const Content= styled.div`
                 color: #cfd9ff;
                 svg{
                     margin-right: 10px;
-                    font-size:3rem;
+                    font-size: 2.1rem;
+                    color: #24292f;
+
                     transition: all .3s;
 
                     &:hover{
@@ -85,7 +87,7 @@ export const Content= styled.div`
                         transform: scale(1.1) translate(12%,0%);
                     }
                 }
-                &:nth-child(1) svg{
+                /* &:nth-child(1) svg{
                     color: #4bed68;
                 }
                 &:nth-child(2) svg{
@@ -93,7 +95,7 @@ export const Content= styled.div`
                 }
                 &:nth-child(3) svg{
                     color: #24292f;
-                }
+                } */
             }
         }
     }
