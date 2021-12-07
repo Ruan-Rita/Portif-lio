@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        font-family: 'Nunito';
+        font-family: sans-serif;
     }
     button {
         border: none;

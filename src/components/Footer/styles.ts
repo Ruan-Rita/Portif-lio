@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-    background: #5656cd ;
+    background: #3d403d ;
     /* position: absolute;
     bottom: 0px; */
     width: 100%;
@@ -45,7 +45,7 @@ export const Content= styled.div`
             }
             svg{
                 margin-right: 10px;
-                color: #85ffff;
+                color: #b7b7b7;
                 font-size: 2rem;
             }
             a{
@@ -62,7 +62,7 @@ export const Content= styled.div`
                 margin-right: 10px;
             }
             h2{
-                color: #85ffff;
+                color: #b7b7b7;
                 font-size: 1.2rem;
             }
         }
@@ -75,10 +75,11 @@ export const Content= styled.div`
                 margin-top: 5px;
                 margin-right: 5px;
                 color: #cfd9ff;
+                text-decoration: none;
                 svg{
                     margin-right: 10px;
                     font-size: 2.1rem;
-                    color: #24292f;
+                    color: #b3b3b3;
 
                     transition: all .3s;
 

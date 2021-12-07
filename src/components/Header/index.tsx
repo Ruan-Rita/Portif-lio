@@ -5,7 +5,7 @@ const Header: React.FC = () => {
         <Headers>
             <Container>
                 <div>
-                    Devel
+                    Devel Tech
                     <span></span>
                 </div>
                 <ul>
